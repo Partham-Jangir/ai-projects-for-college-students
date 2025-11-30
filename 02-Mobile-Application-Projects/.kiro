@@ -1,0 +1,128 @@
+# Mobile Application Projects - AI Development Rules
+
+## Project Context
+This folder contains 25 cross-platform mobile applications with AI capabilities using React Native and Flutter.
+
+## Technology Stack
+- **Mobile Frameworks**: React Native, Flutter, Expo
+- **Languages**: JavaScript/TypeScript, Dart
+- **AI/ML**: TensorFlow Lite, ML Kit, Core ML, OpenAI APIs
+- **Cloud Services**: Firebase, AWS Amplify, Google Cloud
+- **State Management**: Redux, MobX, Provider, Riverpod
+- **Navigation**: React Navigation, Flutter Navigator
+
+## Development Guidelines
+
+### Code Standards
+- Use TypeScript for React Native projects
+- Follow platform-specific design guidelines (Material Design for Android, Human Interface for iOS)
+- Implement proper state management
+- Write modular, reusable components
+- Use proper naming conventions
+
+### Mobile-Specific Best Practices
+- Optimize for battery consumption
+- Implement offline-first architecture where possible
+- Handle network connectivity changes gracefully
+- Optimize app size and loading times
+- Test on both iOS and Android devices
+- Implement proper permission handling
+
+### AI Integration for Mobile
+- Use on-device ML models when possible (TensorFlow Lite, ML Kit)
+- Implement efficient image processing pipelines
+- Cache AI results to reduce API calls
+- Handle low-bandwidth scenarios
+- Optimize model size for mobile deployment
+- Implement progressive loading for AI features
+
+### Project Structure (React Native)
+```
+project-name/
+├── src/
+│   ├── components/     # Reusable UI components
+│   ├── screens/        # Screen components
+│   ├── navigation/     # Navigation configuration
+│   ├── services/       # API and AI services
+│   ├── hooks/          # Custom hooks
+│   ├── utils/          # Helper functions
+│   ├── store/          # State management
+│   └── types/          # TypeScript types
+├── assets/             # Images, fonts, etc.
+├── ios/                # iOS native code
+├── android/            # Android native code
+└── package.json
+```
+
+### Project Structure (Flutter)
+```
+project-name/
+├── lib/
+│   ├── models/         # Data models
+│   ├── screens/        # Screen widgets
+│   ├── widgets/        # Reusable widgets
+│   ├── services/       # API and AI services
+│   ├── providers/      # State management
+│   └── utils/          # Helper functions
+├── assets/             # Images, fonts, etc.
+├── test/               # Test files
+└── pubspec.yaml
+```
+
+### Testing Requirements
+- Write widget tests for UI components
+- Implement unit tests for business logic
+- Test on multiple device sizes and orientations
+- Test AI features with mock data
+- Perform integration testing
+
+### Performance Optimization
+- Implement lazy loading and pagination
+- Optimize image loading and caching
+- Use FlatList/ListView efficiently
+- Minimize re-renders
+- Profile and optimize AI model inference
+- Implement proper memory management
+
+### Platform-Specific Features
+- Camera and photo library access
+- Geolocation services
+- Push notifications
+- Biometric authentication
+- Device sensors (accelerometer, gyroscope)
+- Background processing
+
+### Security Considerations
+- Secure storage for sensitive data (Keychain, Keystore)
+- Implement certificate pinning
+- Validate all user inputs
+- Encrypt data in transit and at rest
+- Handle permissions properly
+
+## Common AI Features
+- Voice commands and speech recognition
+- Computer vision (object detection, OCR, AR)
+- Personalization and recommendations
+- Natural language processing
+- Mood and sentiment analysis
+- Health and fitness tracking with AI
+
+## Getting Started
+
+### React Native
+```bash
+npm install -g expo-cli
+cd <project-folder>
+npm install
+expo start
+```
+
+### Flutter
+```bash
+cd <project-folder>
+flutter pub get
+flutter run
+```
+
+## Contact
+Team Akrix - scholarspace@akrixsolutions.in

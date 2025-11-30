@@ -1,0 +1,14 @@
+﻿{
+  "name": "intelligent-3d-printing-optimization",
+  "version": "1.0.0",
+  "description": "Demo - 95-Intelligent-3D-Printing-Optimization",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  }
+}

@@ -1,0 +1,111 @@
+# Cursor Rules for Voice Smart Car Interface
+
+## Project Context
+This is an AI-powered car interface application built with Node.js and Express.js. The project implements AI/ML features for intelligent functionality.
+
+## Tech Stack
+- **Backend**: Node.js 18+, Express.js 4.18+
+- **Database**: MongoDB with Mongoose ODM
+- **AI/ML**: Custom algorithms, optional OpenAI integration
+- **Package Manager**: npm
+
+## Code Style & Conventions
+- Use ES6+ JavaScript features
+- Follow async/await pattern for asynchronous operations
+- Use camelCase for variables and functions
+- Use PascalCase for classes and constructors
+- Use descriptive variable and function names
+- Add JSDoc comments for complex functions
+- Keep functions small and focused
+
+## File Structure
+```
+/
+├── server.js (main entry point)
+├── routes/ (API routes)
+├── models/ (MongoDB models)
+├── controllers/ (business logic)
+├── services/ (AI/ML algorithms)
+├── middleware/ (auth, validation, etc.)
+└── utils/ (helper functions)
+```
+
+## AI/ML Development Guidelines
+- Implement AI algorithms in separate service files
+- Use clear mathematical notation in comments
+- Optimize for performance (cache results when possible)
+- Handle edge cases
+- Document algorithm parameters
+- Test with sample data
+
+## API Development
+- Follow RESTful conventions
+- Use consistent response formats: { success, data, message, error }
+- Implement proper error handling with status codes
+- Add input validation for all endpoints
+- Use middleware for common operations
+
+## Database Guidelines
+- Use Mongoose schemas with proper validation
+- Create indexes for frequently queried fields
+- Use aggregation pipelines for complex queries
+- Handle database errors gracefully
+
+## Security Best Practices
+- Validate and sanitize all user inputs
+- Use environment variables for sensitive data
+- Implement rate limiting on API endpoints
+- Use JWT for authentication with proper expiration
+- Implement CORS properly
+
+## Performance Optimization
+- Cache frequently accessed data
+- Use database indexes strategically
+- Optimize algorithm calculations
+- Implement pagination for large datasets
+- Monitor and log slow queries
+
+## Error Handling
+- Use try-catch blocks for async operations
+- Return meaningful error messages
+- Log errors for debugging
+- Use appropriate HTTP status codes
+
+## Code Generation Preferences
+- Prefer async/await over callbacks
+- Use destructuring for object/array operations
+- Use template literals for string concatenation
+- Prefer const over let, avoid var
+- Use arrow functions for callbacks
+
+## AI Assistant Instructions
+- When suggesting code, prioritize readability and maintainability
+- Suggest performance optimizations when relevant
+- Include error handling in code suggestions
+- Add comments for complex logic
+- Suggest improvements for algorithm efficiency
+- Recommend best practices for Node.js/Express
+- Consider scalability in code suggestions
+
+## Common Patterns
+- Use Express router for route organization
+- Implement middleware chain: auth → validation → controller
+- Use service layer for business logic separation
+- Create utility functions for reusable operations
+- Use environment-based configuration
+
+## Dependencies to Consider
+- express: Web framework
+- mongoose: MongoDB ODM
+- cors: Cross-origin resource sharing
+- dotenv: Environment variables
+- openai: Optional AI features
+- nodemon: Development server
+
+## Future Enhancements to Keep in Mind
+- Advanced AI features
+- Real-time updates
+- Analytics dashboard
+- Multi-language support
+- Mobile app integration
+

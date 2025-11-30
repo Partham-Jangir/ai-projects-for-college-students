@@ -1,0 +1,14 @@
+﻿{
+  "name": "ai-augmented-reality-shopping",
+  "version": "1.0.0",
+  "description": "Demo - 88-AI-Augmented-Reality-Shopping",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  }
+}

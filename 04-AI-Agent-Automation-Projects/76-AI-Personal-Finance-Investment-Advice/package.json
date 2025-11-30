@@ -1,0 +1,15 @@
+﻿{
+  "name": "ai-personal-finance-investment-advice",
+  "version": "1.0.0",
+  "description": "Demo - 76-AI-Personal-Finance-Investment-Advice",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "axios": "^1.6.0"
+  }
+}

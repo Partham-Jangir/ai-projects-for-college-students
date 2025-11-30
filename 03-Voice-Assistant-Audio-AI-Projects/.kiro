@@ -1,0 +1,136 @@
+# Voice Assistant & Audio AI Projects - Development Rules
+
+## Project Context
+This folder contains 20 voice interaction, speech processing, and audio AI solutions.
+
+## Technology Stack
+- **Speech Recognition**: Google Speech-to-Text, OpenAI Whisper, Azure Speech
+- **Text-to-Speech**: Google TTS, Amazon Polly, ElevenLabs
+- **NLU/NLP**: Dialogflow, Rasa, OpenAI GPT, spaCy
+- **Audio Processing**: Web Audio API, FFmpeg, librosa, pydub
+- **Voice Platforms**: Twilio Voice, Vonage, WebRTC
+- **Backend**: Node.js, Python (FastAPI, Flask)
+- **Real-time**: WebSockets, Socket.io
+
+## Development Guidelines
+
+### Code Standards
+- Implement proper error handling for audio processing
+- Use async/await for all audio operations
+- Handle microphone permissions gracefully
+- Implement proper cleanup for audio resources
+- Write modular, testable code
+
+### Voice & Audio Best Practices
+- Implement noise cancellation and audio enhancement
+- Handle various audio formats and sample rates
+- Optimize for low-latency processing
+- Implement proper buffering strategies
+- Handle network interruptions gracefully
+- Support multiple languages and accents
+
+### Speech Recognition Integration
+- Implement streaming recognition for real-time feedback
+- Handle partial and final transcription results
+- Implement confidence scoring
+- Support custom vocabulary and context
+- Handle silence detection and endpoint detection
+- Implement fallback mechanisms
+
+### Text-to-Speech Integration
+- Cache generated audio when appropriate
+- Support SSML for advanced speech control
+- Implement voice customization options
+- Handle long text with proper chunking
+- Optimize audio quality vs. file size
+
+### Audio Processing Pipeline
+```
+Input → Preprocessing → Feature Extraction → AI Processing → Post-processing → Output
+```
+
+### Project Structure
+```
+project-name/
+├── src/
+│   ├── audio/          # Audio processing utilities
+│   ├── speech/         # Speech recognition/synthesis
+│   ├── nlp/            # Natural language processing
+│   ├── services/       # External API integrations
+│   ├── models/         # AI models
+│   ├── utils/          # Helper functions
+│   └── config/         # Configuration files
+├── tests/              # Test files
+├── audio-samples/      # Sample audio files for testing
+└── package.json
+```
+
+### Testing Requirements
+- Test with various audio qualities and formats
+- Test with different accents and speaking styles
+- Implement unit tests for audio processing functions
+- Test real-time performance and latency
+- Test error handling and edge cases
+- Use mock audio data for automated testing
+
+### Performance Optimization
+- Implement audio streaming for large files
+- Use Web Workers for heavy processing
+- Optimize model inference time
+- Implement caching for repeated queries
+- Monitor memory usage with audio buffers
+- Use appropriate audio compression
+
+### Real-time Communication
+- Implement WebRTC for peer-to-peer audio
+- Use WebSockets for server communication
+- Handle connection drops and reconnection
+- Implement echo cancellation
+- Optimize for low latency
+
+### Security Considerations
+- Encrypt audio data in transit
+- Implement proper authentication for voice commands
+- Validate voice biometrics securely
+- Handle sensitive audio data with care
+- Implement rate limiting for API calls
+
+### Accessibility
+- Provide visual feedback for audio interactions
+- Support keyboard alternatives
+- Implement clear error messages
+- Provide transcripts for audio content
+- Support assistive technologies
+
+## Common AI Features
+- Voice command recognition and intent detection
+- Speech-to-text transcription
+- Text-to-speech synthesis
+- Voice cloning and customization
+- Emotion and sentiment detection from voice
+- Speaker identification and diarization
+- Audio enhancement and noise reduction
+- Real-time translation
+- Meeting transcription and summarization
+
+## Audio Format Support
+- WAV, MP3, OGG, FLAC, AAC
+- Sample rates: 8kHz, 16kHz, 44.1kHz, 48kHz
+- Mono and stereo channels
+
+## Getting Started
+```bash
+cd <project-folder>
+npm install
+npm run dev
+```
+
+## Environment Variables
+```
+GOOGLE_SPEECH_API_KEY=your_key
+OPENAI_API_KEY=your_key
+ELEVENLABS_API_KEY=your_key
+```
+
+## Contact
+Team Akrix - scholarspace@akrixsolutions.in

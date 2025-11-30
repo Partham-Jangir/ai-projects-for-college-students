@@ -1,0 +1,190 @@
+# AI Agent & Automation Projects - Development Rules
+
+## Project Context
+This folder contains 15 intelligent agents for workflow automation, productivity enhancement, and autonomous task execution.
+
+## Technology Stack
+- **AI/ML**: OpenAI GPT-4, Anthropic Claude, LangChain, LlamaIndex
+- **Agent Frameworks**: AutoGPT, BabyAGI, CrewAI, Semantic Kernel
+- **Automation**: n8n, Zapier API, Make (Integromat)
+- **Backend**: Node.js, Python (FastAPI, Django)
+- **Task Queues**: Bull, Celery, RabbitMQ, Redis
+- **Databases**: PostgreSQL, MongoDB, Vector DBs (Pinecone, Weaviate, Chroma)
+- **Orchestration**: Temporal, Apache Airflow
+
+## Development Guidelines
+
+### Code Standards
+- Implement robust error handling and retry logic
+- Use async/await for all I/O operations
+- Write modular, composable agent components
+- Implement proper logging and monitoring
+- Use type hints/TypeScript for better maintainability
+
+### AI Agent Architecture
+```
+Agent = Perception → Reasoning → Planning → Action → Learning
+```
+
+### Agent Design Patterns
+- **ReAct Pattern**: Reasoning + Acting in interleaved manner
+- **Chain-of-Thought**: Break complex tasks into steps
+- **Tool Use**: Agents with access to external tools/APIs
+- **Multi-Agent**: Collaborative agents with specialized roles
+- **Memory Systems**: Short-term and long-term memory
+
+### Project Structure
+```
+project-name/
+├── src/
+│   ├── agents/         # Agent implementations
+│   ├── tools/          # Tools/functions agents can use
+│   ├── memory/         # Memory systems
+│   ├── prompts/        # Prompt templates
+│   ├── workflows/      # Workflow definitions
+│   ├── services/       # External integrations
+│   ├── utils/          # Helper functions
+│   └── config/         # Configuration
+├── tests/              # Test files
+├── logs/               # Log files
+└── package.json
+```
+
+### Agent Development Best Practices
+- Define clear agent objectives and constraints
+- Implement proper task decomposition
+- Use structured outputs (JSON, schemas)
+- Implement human-in-the-loop for critical decisions
+- Monitor agent behavior and costs
+- Implement safety guardrails
+- Version control prompts and configurations
+
+### Memory Management
+- **Short-term Memory**: Current conversation/task context
+- **Long-term Memory**: Vector database for retrieval
+- **Episodic Memory**: Past experiences and outcomes
+- **Semantic Memory**: General knowledge and facts
+- Implement memory pruning and summarization
+
+### Tool Integration
+- Define clear tool interfaces and schemas
+- Implement proper error handling for tool failures
+- Validate tool inputs and outputs
+- Monitor tool usage and performance
+- Implement tool access controls
+
+### Workflow Orchestration
+- Break complex tasks into manageable steps
+- Implement proper state management
+- Handle failures and retries gracefully
+- Support parallel and sequential execution
+- Implement checkpointing for long-running tasks
+
+### Testing Requirements
+- Unit test individual agent components
+- Integration test agent workflows
+- Test with various input scenarios
+- Mock external API calls
+- Test error handling and edge cases
+- Measure agent performance and accuracy
+
+### Performance Optimization
+- Implement caching for repeated queries
+- Use streaming for long responses
+- Optimize prompt length and token usage
+- Batch similar operations
+- Monitor and optimize API costs
+- Implement rate limiting
+
+### Security Considerations
+- Validate all agent inputs and outputs
+- Implement proper authentication for agent actions
+- Sandbox agent execution environments
+- Monitor for prompt injection attacks
+- Implement audit logging for agent actions
+- Set resource limits and timeouts
+
+### Monitoring & Observability
+- Log all agent decisions and actions
+- Track token usage and costs
+- Monitor success/failure rates
+- Implement alerting for anomalies
+- Track task completion times
+- Measure user satisfaction
+
+## Common Agent Types
+
+### Task Automation Agents
+- Email management and sorting
+- Social media scheduling
+- Document processing
+- Data entry and extraction
+
+### Research & Analysis Agents
+- Information gathering and synthesis
+- Report generation
+- Competitive analysis
+- Academic research assistance
+
+### Customer Service Agents
+- Multi-channel support
+- Ticket routing and prioritization
+- FAQ answering
+- Sentiment analysis
+
+### Content Creation Agents
+- Blog writing and SEO
+- Social media content
+- Marketing copy
+- Code generation
+
+### Decision Support Agents
+- Financial analysis
+- Investment recommendations
+- Risk assessment
+- Predictive analytics
+
+## Integration Patterns
+- **API Integration**: REST, GraphQL, webhooks
+- **Database Integration**: Direct DB access, ORMs
+- **File System**: Read/write files, process documents
+- **Email**: IMAP, SMTP, email APIs
+- **Calendar**: Google Calendar, Outlook
+- **CRM**: Salesforce, HubSpot
+- **Project Management**: Jira, Asana, Trello
+
+## Getting Started
+```bash
+cd <project-folder>
+npm install
+# or
+pip install -r requirements.txt
+
+# Set up environment variables
+cp .env.example .env
+
+# Run the agent
+npm start
+# or
+python main.py
+```
+
+## Environment Variables
+```
+OPENAI_API_KEY=your_key
+ANTHROPIC_API_KEY=your_key
+PINECONE_API_KEY=your_key
+DATABASE_URL=your_db_url
+```
+
+## Best Practices for Production
+- Implement comprehensive error handling
+- Use queue systems for async tasks
+- Implement proper rate limiting
+- Monitor costs and usage
+- Implement human oversight for critical actions
+- Regular testing and validation
+- Version control for prompts and configs
+
+## Contact
+Team Akrix - scholarspace@akrixsolutions.in

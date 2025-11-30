@@ -1,0 +1,263 @@
+# Cross-Platform & Emerging Tech Projects - Development Rules
+
+## Project Context
+This folder contains 15 cutting-edge technology projects including IoT, AR/VR, Blockchain, Edge Computing, and other emerging technologies with AI integration.
+
+## Technology Stack
+
+### IoT & Edge Computing
+- **Platforms**: AWS IoT, Google Cloud IoT, Azure IoT Hub
+- **Protocols**: MQTT, CoAP, WebSocket
+- **Edge**: TensorFlow Lite, ONNX Runtime, Edge Impulse
+- **Hardware**: Raspberry Pi, Arduino, ESP32
+
+### AR/VR
+- **AR**: ARKit, ARCore, Vuforia, 8th Wall
+- **VR**: Unity, Unreal Engine, A-Frame, Three.js
+- **3D**: Three.js, Babylon.js, WebXR
+
+### Blockchain
+- **Platforms**: Ethereum, Polygon, Solana, Hyperledger
+- **Smart Contracts**: Solidity, Rust
+- **Web3**: ethers.js, web3.js, Hardhat, Truffle
+
+### Wearables
+- **Platforms**: WatchOS, Wear OS, Fitbit SDK
+- **Health**: HealthKit, Google Fit, Samsung Health
+
+### Drones & Robotics
+- **Frameworks**: ROS (Robot Operating System), DroneKit
+- **Computer Vision**: OpenCV, YOLO, MediaPipe
+- **Control**: PX4, ArduPilot
+
+### 3D Printing
+- **Slicing**: Cura Engine, Slic3r
+- **Modeling**: OpenSCAD, FreeCAD
+- **AI Optimization**: TensorFlow, PyTorch
+
+## Development Guidelines
+
+### Code Standards
+- Follow platform-specific best practices
+- Implement proper error handling for hardware interactions
+- Write modular, testable code
+- Document hardware requirements and setup
+- Use version control for all code and configurations
+
+### IoT & Edge Computing Best Practices
+- Implement offline-first architecture
+- Optimize for low-power consumption
+- Handle intermittent connectivity
+- Implement secure device authentication
+- Use efficient data compression
+- Implement OTA (Over-The-Air) updates
+- Monitor device health and metrics
+
+### AR/VR Development
+- Optimize for 60+ FPS performance
+- Implement proper spatial tracking
+- Handle device capabilities gracefully
+- Optimize 3D models and textures
+- Implement proper lighting and shadows
+- Test on target devices
+- Consider user comfort and motion sickness
+
+### Blockchain Integration
+- Implement proper wallet integration
+- Handle gas fees and transaction failures
+- Validate smart contract interactions
+- Implement proper error handling
+- Use testnet for development
+- Audit smart contracts before deployment
+- Implement proper key management
+
+### Project Structure (IoT)
+```
+project-name/
+├── src/
+│   ├── devices/        # Device-specific code
+│   ├── edge/           # Edge computing logic
+│   ├── cloud/          # Cloud integration
+│   ├── ml/             # ML models
+│   ├── protocols/      # Communication protocols
+│   └── utils/          # Helper functions
+├── models/             # ML models
+├── config/             # Device configurations
+└── tests/              # Test files
+```
+
+### Project Structure (AR/VR)
+```
+project-name/
+├── src/
+│   ├── scenes/         # VR/AR scenes
+│   ├── components/     # 3D components
+│   ├── controllers/    # Input controllers
+│   ├── ai/             # AI integration
+│   └── utils/          # Helper functions
+├── assets/             # 3D models, textures
+├── shaders/            # Custom shaders
+└── tests/              # Test files
+```
+
+### Project Structure (Blockchain)
+```
+project-name/
+├── contracts/          # Smart contracts
+├── scripts/            # Deployment scripts
+├── test/               # Contract tests
+├── frontend/           # Web3 frontend
+│   ├── src/
+│   │   ├── components/
+│   │   ├── hooks/      # Web3 hooks
+│   │   └── utils/
+└── hardhat.config.js
+```
+
+### Testing Requirements
+- Unit test core logic
+- Integration test hardware/platform interactions
+- Test edge cases and error conditions
+- Simulate network failures
+- Test on actual hardware when possible
+- Performance testing for real-time systems
+- Security testing for blockchain applications
+
+### Performance Optimization
+- Optimize for target hardware constraints
+- Implement efficient data structures
+- Use hardware acceleration when available
+- Minimize network bandwidth usage
+- Implement proper caching strategies
+- Profile and optimize bottlenecks
+- Use appropriate compression algorithms
+
+### Security Considerations
+- Implement secure device authentication
+- Encrypt sensitive data in transit and at rest
+- Validate all inputs from sensors/users
+- Implement proper access controls
+- Regular security audits
+- Follow platform security guidelines
+- Implement secure key management
+
+### Real-time Processing
+- Implement proper buffering strategies
+- Handle timing constraints
+- Use appropriate threading/async patterns
+- Monitor latency and jitter
+- Implement graceful degradation
+- Handle resource constraints
+
+## Common AI Features by Category
+
+### IoT & Edge
+- Predictive maintenance
+- Anomaly detection
+- Energy optimization
+- Smart automation
+- Computer vision on edge devices
+
+### AR/VR
+- Object recognition and tracking
+- Gesture recognition
+- Spatial mapping
+- AI-driven content generation
+- Intelligent tutoring systems
+
+### Blockchain
+- Fraud detection
+- Smart contract optimization
+- Market prediction
+- Risk assessment
+- Automated trading
+
+### Wearables
+- Health monitoring and predictions
+- Activity recognition
+- Sleep analysis
+- Stress detection
+- Personalized recommendations
+
+### Drones & Robotics
+- Autonomous navigation
+- Object detection and avoidance
+- Path planning
+- SLAM (Simultaneous Localization and Mapping)
+- Computer vision
+
+## Hardware Requirements
+Document specific hardware requirements for each project:
+- Minimum specifications
+- Recommended specifications
+- Required sensors/peripherals
+- Power requirements
+- Network requirements
+
+## Getting Started
+
+### IoT Projects
+```bash
+cd <project-folder>
+npm install
+# Configure device settings
+cp config.example.json config.json
+# Deploy to device
+npm run deploy
+```
+
+### AR/VR Projects
+```bash
+cd <project-folder>
+npm install
+npm run dev
+# Open in VR headset or AR-capable device
+```
+
+### Blockchain Projects
+```bash
+cd <project-folder>
+npm install
+# Compile contracts
+npx hardhat compile
+# Run tests
+npx hardhat test
+# Deploy to testnet
+npx hardhat run scripts/deploy.js --network goerli
+```
+
+## Environment Variables
+```
+# IoT
+AWS_IOT_ENDPOINT=your_endpoint
+DEVICE_ID=your_device_id
+
+# Blockchain
+INFURA_API_KEY=your_key
+PRIVATE_KEY=your_private_key
+ETHERSCAN_API_KEY=your_key
+
+# Cloud Services
+GOOGLE_CLOUD_PROJECT=your_project
+AWS_REGION=your_region
+```
+
+## Deployment Considerations
+- Test thoroughly on target hardware
+- Implement monitoring and logging
+- Plan for updates and maintenance
+- Consider scalability requirements
+- Implement proper backup strategies
+- Document deployment procedures
+- Plan for disaster recovery
+
+## Safety & Compliance
+- Follow industry safety standards
+- Implement fail-safe mechanisms
+- Consider regulatory requirements
+- Document safety procedures
+- Implement proper testing protocols
+- Consider environmental impact
+
+## Contact
+Team Akrix - scholarspace@akrixsolutions.in

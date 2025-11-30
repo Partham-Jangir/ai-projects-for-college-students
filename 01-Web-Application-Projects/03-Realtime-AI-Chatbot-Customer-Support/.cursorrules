@@ -1,0 +1,58 @@
+# Cursor Rules for Real-time AI Chatbot
+
+## Project Context
+Real-time AI chatbot with WebSocket communication, intent recognition, and smart response generation for customer support.
+
+## Tech Stack
+- **Backend**: Node.js, Express.js, Socket.IO
+- **AI/ML**: Custom NLP intent classification
+- **Database**: MongoDB (optional)
+- **Package Manager**: npm
+
+## Code Style
+- Use ES6+ JavaScript
+- Follow async/await pattern
+- Use camelCase for variables
+- Add comments for intent recognition logic
+
+## File Structure
+```
+/
+├── server.js
+├── routes/
+├── services/
+│   ├── intentRecognizer.js
+│   └── responseGenerator.js
+├── models/
+└── socket/
+    └── chatHandler.js
+```
+
+## AI/ML Guidelines
+- Implement intent recognition in separate service
+- Document intent patterns clearly
+- Handle context in conversations
+- Optimize for real-time performance
+- Test with various query types
+
+## WebSocket Development
+- Use Socket.IO for real-time communication
+- Handle connection/disconnection events
+- Implement message queuing
+- Manage session state
+- Handle errors gracefully
+
+## Security
+- Validate all user inputs
+- Rate limit connections
+- Use secure WebSocket (WSS)
+- Protect against injection attacks
+- Encrypt sensitive data
+
+## Performance
+- Optimize message processing
+- Cache common responses
+- Handle concurrent connections
+- Monitor connection health
+- Implement reconnection logic
+

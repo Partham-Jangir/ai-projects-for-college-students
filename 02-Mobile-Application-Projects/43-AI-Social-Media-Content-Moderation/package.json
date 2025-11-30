@@ -1,0 +1,16 @@
+﻿{
+  "name": "ai-social-media-content-moderation",
+  "version": "1.0.0",
+  "description": "Demo project - 43-AI-Social-Media-Content-Moderation",
+  "main": "App.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios"
+  },
+  "dependencies": {
+    "expo": "~49.0.0",
+    "react": "18.2.0",
+    "react-native": "0.72.6"
+  }
+}

@@ -1,0 +1,137 @@
+# Cursor Rules for AI E-commerce Recommendation Engine
+
+## Project Context
+This is an AI-powered e-commerce recommendation engine built with Node.js, Express.js, and MongoDB. The project implements hybrid recommendation algorithms combining content-based and collaborative filtering.
+
+## Tech Stack
+- **Backend**: Node.js 18+, Express.js 4.18+
+- **Database**: MongoDB with Mongoose ODM
+- **AI/ML**: Custom recommendation algorithms, optional OpenAI integration
+- **Authentication**: JWT (jsonwebtoken)
+- **Package Manager**: npm
+
+## Code Style & Conventions
+- Use ES6+ JavaScript features
+- Follow async/await pattern for asynchronous operations
+- Use camelCase for variables and functions
+- Use PascalCase for classes and constructors
+- Use descriptive variable and function names
+- Add JSDoc comments for complex functions
+- Keep functions small and focused (single responsibility)
+- Use meaningful error messages
+
+## File Structure
+```
+/
+├── server.js (main entry point)
+├── routes/ (API routes)
+├── models/ (MongoDB models)
+├── controllers/ (business logic)
+├── services/ (recommendation algorithms)
+├── middleware/ (auth, validation, etc.)
+├── utils/ (helper functions)
+└── config/ (configuration files)
+```
+
+## AI/ML Development Guidelines
+- Implement recommendation algorithms in separate service files
+- Use clear mathematical notation in comments for algorithms
+- Optimize for performance (cache results when possible)
+- Handle edge cases: new users, sparse data, cold start
+- Document algorithm parameters and tuning methods
+- Test recommendation accuracy with sample data
+- Consider scalability when designing data structures
+
+## API Development
+- Follow RESTful conventions
+- Use consistent response formats: { success, data, message, error }
+- Implement proper error handling with status codes
+- Add input validation for all endpoints
+- Use middleware for common operations (auth, logging)
+- Document API endpoints with clear descriptions
+- Keep response times under 500ms
+
+## Database Guidelines
+- Use Mongoose schemas with proper validation
+- Create indexes for frequently queried fields
+- Use aggregation pipelines for complex queries
+- Implement connection pooling
+- Handle database errors gracefully
+- Use transactions for multi-step operations
+
+## Security Best Practices
+- Validate and sanitize all user inputs
+- Use environment variables for sensitive data
+- Implement rate limiting on API endpoints
+- Use JWT for authentication with proper expiration
+- Hash passwords with bcryptjs
+- Implement CORS properly
+- Protect against SQL injection (if using SQL)
+- Sanitize outputs to prevent XSS
+
+## Testing Approach
+- Write unit tests for recommendation algorithms
+- Test API endpoints with various scenarios
+- Test edge cases (empty data, invalid inputs)
+- Performance test with load testing tools
+- Test recommendation accuracy with sample datasets
+
+## Performance Optimization
+- Cache frequently accessed recommendations
+- Use database indexes strategically
+- Optimize algorithm calculations
+- Implement pagination for large datasets
+- Use connection pooling for database
+- Monitor and log slow queries
+
+## Error Handling
+- Use try-catch blocks for async operations
+- Return meaningful error messages
+- Log errors for debugging
+- Use appropriate HTTP status codes
+- Create custom error classes for different error types
+
+## Code Generation Preferences
+- Prefer async/await over callbacks
+- Use destructuring for object/array operations
+- Use template literals for string concatenation
+- Use optional chaining (?.) and nullish coalescing (??)
+- Prefer const over let, avoid var
+- Use arrow functions for callbacks
+
+## AI Assistant Instructions
+- When suggesting code, prioritize readability and maintainability
+- Suggest performance optimizations when relevant
+- Include error handling in code suggestions
+- Add comments for complex logic
+- Suggest improvements for algorithm efficiency
+- Recommend best practices for Node.js/Express
+- Consider scalability in code suggestions
+- Help with MongoDB query optimization
+
+## Common Patterns
+- Use Express router for route organization
+- Implement middleware chain: auth → validation → controller
+- Use service layer for business logic separation
+- Create utility functions for reusable operations
+- Use environment-based configuration
+- Implement logging for debugging and monitoring
+
+## Dependencies to Consider
+- express: Web framework
+- mongoose: MongoDB ODM
+- jsonwebtoken: JWT authentication
+- bcryptjs: Password hashing
+- cors: Cross-origin resource sharing
+- dotenv: Environment variables
+- openai: Optional AI features
+- nodemon: Development server
+
+## Future Enhancements to Keep in Mind
+- React.js frontend integration
+- OpenAI integration for NLP features
+- Real-time analytics dashboard
+- A/B testing framework
+- Advanced ML models
+- Image-based recommendations
+

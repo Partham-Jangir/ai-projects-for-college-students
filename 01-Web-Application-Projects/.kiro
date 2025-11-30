@@ -1,0 +1,85 @@
+# Web Application Projects - AI Development Rules
+
+## Project Context
+This folder contains 25 full-stack web applications with AI integration using modern frameworks (React, Next.js, Vue, Angular, Node.js).
+
+## Technology Stack
+- **Frontend**: React.js, Next.js, Vue.js, Angular, HTML5, CSS3, TypeScript
+- **Backend**: Node.js, Express.js, Python (Django, FastAPI)
+- **APIs**: RESTful APIs, GraphQL
+- **AI/ML**: TensorFlow.js, OpenAI APIs, HuggingFace, Google Cloud AI, AWS AI Services
+- **Database**: MongoDB, PostgreSQL, Redis, Firebase, Vector databases (Pinecone, Weaviate)
+
+## Development Guidelines
+
+### Code Standards
+- Use TypeScript for type safety in all new code
+- Follow component-based architecture patterns
+- Implement proper error handling and validation
+- Write clean, maintainable, and well-documented code
+- Use async/await for asynchronous operations
+
+### AI Integration Best Practices
+- Implement proper API rate limiting and error handling for AI services
+- Cache AI responses where appropriate to reduce costs
+- Use environment variables for API keys (never commit secrets)
+- Implement fallback mechanisms when AI services are unavailable
+- Monitor AI API usage and costs
+
+### Project Structure
+```
+project-name/
+├── src/
+│   ├── components/     # Reusable UI components
+│   ├── pages/          # Page components
+│   ├── services/       # API and AI service integrations
+│   ├── utils/          # Helper functions
+│   ├── hooks/          # Custom React hooks
+│   └── types/          # TypeScript type definitions
+├── public/             # Static assets
+├── tests/              # Test files
+└── package.json
+```
+
+### Testing Requirements
+- Write unit tests for utility functions and services
+- Implement integration tests for API endpoints
+- Test AI integration with mock responses
+- Ensure responsive design across devices
+
+### Security Considerations
+- Validate all user inputs
+- Implement proper authentication and authorization
+- Use HTTPS for all API communications
+- Sanitize data before AI processing
+- Follow OWASP security guidelines
+
+### Performance Optimization
+- Implement lazy loading for components
+- Optimize images and assets
+- Use code splitting
+- Implement caching strategies
+- Monitor and optimize AI API response times
+
+### Deployment
+- Use Docker for containerization
+- Implement CI/CD pipelines
+- Use environment-specific configurations
+- Monitor application performance and errors
+
+## Common AI Features
+- Product recommendations and content filtering
+- Natural language processing and chatbots
+- Sentiment analysis and text classification
+- Image recognition and processing
+- Predictive analytics and forecasting
+
+## Getting Started
+```bash
+cd <project-folder>
+npm install
+npm run dev
+```
+
+## Contact
+Team Akrix - scholarspace@akrixsolutions.in

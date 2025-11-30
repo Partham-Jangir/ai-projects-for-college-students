@@ -1,0 +1,20 @@
+<?php
+$lang['perfex_ai_suite_menu'] = 'Suite IA Perfex';
+$lang['perfex_ai_suite_settings'] = 'Configuración de IA Suite';
+$lang['active'] = 'Activo';
+$lang['inactive'] = 'Inactivo';
+$lang['enable'] = 'Activar';
+$lang['disable'] = 'Desactivar';
+$lang['updated_successfully'] = 'Actualizado correctamente';
+$lang['perfex_ai_suite_marketplace'] = 'Marketplace de IA Suite';
+$lang['perfex_ai_suite_free'] = 'Gratis';
+$lang['perfex_ai_suite_paid'] = 'De pago';
+$lang['perfex_ai_suite_activate'] = 'Activar';
+$lang['perfex_ai_suite_license'] = 'Licencia';
+$lang['perfex_ai_suite_license_title'] = 'Introducir Licencia';
+$lang['perfex_ai_suite_license_key'] = 'Clave de Licencia';
+$lang['perfex_ai_suite_save'] = 'Guardar';
+$lang['perfex_ai_suite_not_found'] = 'Funcionalidad no encontrada';
+$lang['perfex_ai_suite_license_required'] = 'Se requiere licencia para activar';
+$lang['perfex_ai_suite_license_saved'] = 'Licencia guardada';
+$lang['perfex_ai_suite_license_invalid'] = 'Licencia inválida';

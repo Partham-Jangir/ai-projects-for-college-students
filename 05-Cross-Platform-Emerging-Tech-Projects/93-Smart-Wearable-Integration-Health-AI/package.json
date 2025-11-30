@@ -1,0 +1,14 @@
+﻿{
+  "name": "smart-wearable-integration-health-ai",
+  "version": "1.0.0",
+  "description": "Demo - 93-Smart-Wearable-Integration-Health-AI",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  }
+}

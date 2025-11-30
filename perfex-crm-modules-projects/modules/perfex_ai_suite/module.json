@@ -1,0 +1,9 @@
+{
+  "name": "Perfex AI Suite",
+  "description": "30-feature AI and automation enhancements for Perfex CRM",
+  "author": "Your Company",
+  "version": "1.0.0",
+  "requires": {
+    "perfex": ">=3.0.0"
+  }
+}

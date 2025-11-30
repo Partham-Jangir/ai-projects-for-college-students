@@ -1,0 +1,82 @@
+# Cursor Rules for Smart Blog Platform with AI Content Suggestions
+
+## Project Context
+This is an AI-powered blogging platform built with Node.js and Express.js. The project implements NLP algorithms for content analysis, title generation, and SEO optimization.
+
+## Tech Stack
+- **Backend**: Node.js 18+, Express.js 4.18+
+- **Database**: MongoDB with Mongoose ODM
+- **AI/ML**: Custom NLP algorithms, optional OpenAI integration
+- **Package Manager**: npm
+
+## Code Style & Conventions
+- Use ES6+ JavaScript features
+- Follow async/await pattern
+- Use camelCase for variables and functions
+- Use descriptive names for AI functions
+- Add comments for NLP algorithms
+- Keep text processing functions modular
+
+## File Structure
+```
+/
+├── server.js
+├── routes/
+│   ├── posts.js
+│   └── ai.js
+├── services/
+│   ├── titleGenerator.js
+│   ├── contentAnalyzer.js
+│   ├── keywordExtractor.js
+│   └── outlineGenerator.js
+├── models/
+│   └── Post.js
+└── utils/
+    └── textProcessing.js
+```
+
+## AI/ML Development Guidelines
+- Implement NLP algorithms in separate service files
+- Document text processing logic clearly
+- Handle edge cases: empty input, special characters
+- Optimize for performance (cache common operations)
+- Test with various content types
+- Consider multi-language support (future)
+
+## API Development
+- Follow RESTful conventions
+- Use consistent response formats
+- Implement proper error handling
+- Add input validation for text inputs
+- Rate limit AI endpoints to prevent abuse
+- Document API endpoints clearly
+
+## Text Processing Best Practices
+- Normalize text input (trim, lowercase where needed)
+- Handle special characters and encoding
+- Implement text sanitization
+- Use efficient string operations
+- Cache processed results when possible
+
+## Security Best Practices
+- Validate and sanitize all text inputs
+- Implement rate limiting on AI endpoints
+- Protect API keys and secrets
+- Prevent injection attacks
+- Content moderation for user-generated content
+
+## Performance Optimization
+- Cache topic suggestions
+- Optimize text processing algorithms
+- Use async processing for heavy operations
+- Implement pagination for large datasets
+- Monitor API response times
+
+## AI Assistant Instructions
+- Suggest efficient text processing methods
+- Help optimize NLP algorithms
+- Recommend caching strategies
+- Suggest improvements for content analysis
+- Help with SEO-related features
+- Consider performance in suggestions
+
